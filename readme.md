@@ -5,4 +5,7 @@ To run the experiment, the following files need to be places in the same folder
 - Fasttext embeddings 300 dims
 - install libraries based on the requirements.txt
 
-After running the experiments copy over the files called embeddings_txt
+python final.py
+
+After running the experiments copy over the files called embeddings_txt from the results folder and rename them appropriately
+then run python calc_bias.py
