@@ -35,13 +35,12 @@ def main():
     T = ['female', 'woman', 'girl', 'sister', 'she']
     t1, em1 = read_file('plain.txt')
     t2, em2 = read_file('complex.txt')
-    t3, em3 = read_file('glove.6B.300d.txt')
     A1, B1, S1, T1 = list(map(lambda x: get_tokens(x, t1, em1), [A,B,S,T]))
     plain_mean = g(S1,A1,B1) - g(T1,A1,B1)
-    print('Plain Mean', plain_mean)
+    print('Plain weat score: ', plain_mean)
     A2, B2, S2, T2 = list(map(lambda x: get_tokens(x, t2, em2), [A,B,S,T]))
     complex_mean = g(S2,A2,B2) - g(T2,A2,B2)
-    print('Plain Mean', complex_mean)
+    print('Dynamic meta embeddings score: ', complex_mean)
     
 
 if __name__ == '__main__':

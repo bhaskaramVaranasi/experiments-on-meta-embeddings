@@ -346,9 +346,9 @@ def read_news_instances(file_path, max_tokens):
 
 
 def main():
-    tf.random.set_seed(1337)
-    np.random.seed(1337)
-    random.seed(13370)
+    tf.random.set_seed(5000)
+    np.random.seed(6000)
+    random.seed(70000)
 
     #train_instances = read_news_instances('./data/train.json', 250)
     #val_instances = read_news_instances('./data/val.json', 250)
