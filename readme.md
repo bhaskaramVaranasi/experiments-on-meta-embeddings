@@ -5,6 +5,10 @@ To run the experiment, the following files need to be places in the same folder
 - Fasttext embeddings 300 dims
 - install libraries based on the requirements.txt
 
+## Sources of inspiration
+- The following code has been taken from parts of NLP course CSE 538 assignment 2 at Stony Brook University. 
+- Dynamic Meta embeddings from Facebook -https://github.com/facebookresearch/DME 
+
 python final.py
 
 After running the experiments copy over the files called embeddings_txt from the results folder and rename them appropriately
